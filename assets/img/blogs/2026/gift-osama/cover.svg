@@ -8,9 +8,8 @@
 </defs>
 <rect width="1600" height="900" rx="42" fill="url(#bg)"/><rect width="1600" height="900" rx="42" fill="url(#dots)"/>
 <rect x="8" y="8" width="1584" height="884" rx="36" stroke="#33343b" fill="none"/>
-<text x="62" y="78" fill="#fafafa" font-family="Arial,sans-serif" font-size="34" font-weight="900">E-HA<tspan fill="#fa474f">X</tspan></text>
-<path d="M203 47V82" stroke="#65656b"/><text x="235" y="77" fill="#909199" font-family="Consolas,monospace" font-size="29" letter-spacing="4">BLOG</text>
-<circle cx="76" cy="206" r="10" fill="#fc444f"/><text x="104" y="215" font-size="22" font-family="Consolas,monospace" fill="#babac0" letter-spacing="2.8">MALWARE ANALYSIS · THREAT INTEL</text>
+
+<circle cx="76" cy="206" r="10" fill="#fc444f"/><text x="104" y="215" font-size="22" font-family="Consolas,monospace" fill="#babac0" letter-spacing="2.8">MALWARE ANALYSIS  ·  THREAT INTEL</text>
 <text x="61" y="344" font-size="83" font-family="Arial,sans-serif" font-weight="800" fill="#f8f8f9">The Tax Refund</text>
 <text x="61" y="439" font-size="83" font-family="Arial,sans-serif" font-weight="800" fill="#f8f8f9">That <tspan fill="#ff4b52">Wasn't.</tspan></text>
 <text x="64" y="521" font-size="28" font-family="Arial,sans-serif" fill="#a7a7ae">Inside a fake invoice email, an obfuscated</text>
