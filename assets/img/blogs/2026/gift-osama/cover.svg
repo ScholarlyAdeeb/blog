@@ -1,17 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080d12"/><stop offset="1" stop-color="#151019"/></linearGradient><pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M80 0H0V80" fill="none" stroke="#24303b" stroke-opacity=".38"/></pattern></defs>
-<rect width="1200" height="630" fill="url(#bg)"/><rect width="1200" height="630" fill="url(#grid)"/>
-<rect x="72" y="70" width="237" height="40" rx="6" fill="none" stroke="#fa5156" stroke-opacity=".7"/>
-<text x="86" y="97" font-family="Consolas,monospace" font-size="20" letter-spacing="1" fill="#ff5b63">MALWARE TEARDOWN</text>
-<text x="72" y="204" font-family="Arial,sans-serif" font-weight="750" font-size="72" fill="#ecf0f5">The Tax Refund</text>
-<text x="72" y="279" font-family="Arial,sans-serif" font-weight="750" font-size="72" fill="#ecf0f5">That <tspan fill="#ff5158">Wasn't</tspan></text>
-<text x="73" y="340" font-family="Arial,sans-serif" font-size="25" fill="#aab9c7">A fake challan email, a ZIP file,</text><text x="73" y="376" font-family="Arial,sans-serif" font-size="25" fill="#aab9c7">and a concealed malware loader.</text>
-<text x="72" y="566" font-family="Consolas,monospace" font-size="22" fill="#8094a5">by <tspan fill="#edf1f6" font-weight="bold">ADB</tspan>  ·  E-HAX</text>
-<rect x="759" y="62" width="371" height="56" rx="9" fill="#5fa5f3" fill-opacity=".13" stroke="#5fa5f3" stroke-opacity=".65"/><text x="778" y="97" font-size="21" font-family="Consolas,monospace" fill="#5fa5f3">01</text><text x="826" y="97" font-size="20" font-family="Consolas,monospace" fill="#5fa5f3">Invoice_Challan.zip</text>
-<rect x="759" y="128" width="371" height="56" rx="9" fill="#5bd6c8" fill-opacity=".13" stroke="#5bd6c8" stroke-opacity=".65"/><text x="778" y="163" font-size="21" font-family="Consolas,monospace" fill="#5bd6c8">02</text><text x="826" y="163" font-size="20" font-family="Consolas,monospace" fill="#5bd6c8">Batch + PowerShell</text>
-<rect x="759" y="194" width="371" height="56" rx="9" fill="#57d38b" fill-opacity=".13" stroke="#57d38b" stroke-opacity=".65"/><text x="778" y="229" font-size="21" font-family="Consolas,monospace" fill="#57d38b">03</text><text x="826" y="229" font-size="20" font-family="Consolas,monospace" fill="#57d38b">Base64 × 2</text>
-<rect x="759" y="260" width="371" height="56" rx="9" fill="#9ed959" fill-opacity=".13" stroke="#9ed959" stroke-opacity=".65"/><text x="778" y="295" font-size="21" font-family="Consolas,monospace" fill="#9ed959">04</text><text x="826" y="295" font-size="20" font-family="Consolas,monospace" fill="#9ed959">XOR + startup persistence</text>
-<rect x="759" y="326" width="371" height="56" rx="9" fill="#e4d75b" fill-opacity=".13" stroke="#e4d75b" stroke-opacity=".65"/><text x="778" y="361" font-size="21" font-family="Consolas,monospace" fill="#e4d75b">05</text><text x="826" y="361" font-size="20" font-family="Consolas,monospace" fill="#e4d75b">AutoIt → notepad.exe</text>
-<rect x="759" y="392" width="371" height="56" rx="9" fill="#eaa459" fill-opacity=".13" stroke="#eaa459" stroke-opacity=".65"/><text x="778" y="427" font-size="21" font-family="Consolas,monospace" fill="#eaa459">06</text><text x="826" y="427" font-size="20" font-family="Consolas,monospace" fill="#eaa459">Process injection attempt</text>
-<rect x="759" y="458" width="371" height="56" rx="9" fill="#ff666d" fill-opacity=".13" stroke="#ff666d" stroke-opacity=".65"/><text x="778" y="493" font-size="21" font-family="Consolas,monospace" fill="#ff666d">07</text><text x="826" y="493" font-size="20" font-family="Consolas,monospace" fill="#ff666d">Final payload: unverified</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#090a0c"/><stop offset="1" stop-color="#141216"/></linearGradient>
+<linearGradient id="pane" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#22232a"/><stop offset="1" stop-color="#0d0e11"/></linearGradient>
+<linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff4f5"/><stop offset="1" stop-color="#c7bcc0"/></linearGradient>
+<pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="12" cy="12" r="1" fill="#3e4149" opacity=".5"/></pattern>
+<filter id="sh"><feGaussianBlur stdDeviation="14"/></filter>
+</defs>
+<rect width="1600" height="900" rx="42" fill="url(#bg)"/><rect width="1600" height="900" rx="42" fill="url(#dots)"/>
+<rect x="8" y="8" width="1584" height="884" rx="36" stroke="#33343b" fill="none"/>
+<text x="62" y="78" fill="#fafafa" font-family="Arial,sans-serif" font-size="34" font-weight="900">E-HA<tspan fill="#fa474f">X</tspan></text>
+<path d="M203 47V82" stroke="#65656b"/><text x="235" y="77" fill="#909199" font-family="Consolas,monospace" font-size="29" letter-spacing="4">BLOG</text>
+<circle cx="76" cy="206" r="10" fill="#fc444f"/><text x="104" y="215" font-size="22" font-family="Consolas,monospace" fill="#babac0" letter-spacing="2.8">MALWARE ANALYSIS · THREAT INTEL</text>
+<text x="61" y="344" font-size="83" font-family="Arial,sans-serif" font-weight="800" fill="#f8f8f9">The Tax Refund</text>
+<text x="61" y="439" font-size="83" font-family="Arial,sans-serif" font-weight="800" fill="#f8f8f9">That <tspan fill="#ff4b52">Wasn't.</tspan></text>
+<text x="64" y="521" font-size="28" font-family="Arial,sans-serif" fill="#a7a7ae">Inside a fake invoice email, an obfuscated</text>
+<text x="64" y="559" font-size="28" font-family="Arial,sans-serif" fill="#a7a7ae">PowerShell loader, and a process-injection</text>
+<text x="64" y="597" font-size="28" font-family="Arial,sans-serif" fill="#a7a7ae">attempt — a malware analysis case study.</text>
+<rect x="62" y="678" width="136" height="50" rx="14" stroke="#45454a" fill="#1a1b1f"/><text x="76" y="711" font-family="Consolas,monospace" font-size="21" fill="#d6d6da">#malware</text><rect x="213" y="678" width="150" height="50" rx="14" stroke="#45454a" fill="#1a1b1f"/><text x="227" y="711" font-family="Consolas,monospace" font-size="21" fill="#d6d6da">#phishing</text><rect x="377" y="678" width="177" height="50" rx="14" stroke="#45454a" fill="#1a1b1f"/><text x="391" y="711" font-family="Consolas,monospace" font-size="21" fill="#d6d6da">#powershell</text><rect x="569" y="678" width="148" height="50" rx="14" stroke="#45454a" fill="#1a1b1f"/><text x="583" y="711" font-family="Consolas,monospace" font-size="21" fill="#d6d6da">#analysis</text>
+<text x="64" y="837" font-family="Consolas,monospace" font-size="23" fill="#85868d">ADB  /  E-HAX DTU</text>
+<g transform="translate(825 78) rotate(-3 340 205)">
+<rect x="0" y="0" width="710" height="405" rx="22" fill="url(#pane)" stroke="#555660" stroke-width="3"/>
+<rect x="0" y="0" width="710" height="55" rx="22" fill="#1e1e22"/><path d="M0 56H710" stroke="#383942"/>
+<circle cx="29" cy="27" r="9" fill="#fa4852"/><circle cx="58" cy="27" r="9" fill="#f0c64e"/><circle cx="87" cy="27" r="9" fill="#3ad27f"/>
+<text x="148" y="34" font-family="Consolas,monospace" font-size="23" fill="#e1e2e5">decoded_payload.ps1</text>
+<text x="26" y="110" font-size="21" font-family="Consolas,monospace" fill="#666974">01</text><text x="80" y="110" font-size="21" font-family="Consolas,monospace" fill="#9bd4ef">$RegKey = HKCU\\...\\Run</text><text x="26" y="162" font-size="21" font-family="Consolas,monospace" fill="#666974">02</text><text x="80" y="162" font-size="21" font-family="Consolas,monospace" fill="#ff676d">$RegName = GIFT OSAM</text><text x="26" y="214" font-size="21" font-family="Consolas,monospace" fill="#666974">03</text><text x="80" y="214" font-size="21" font-family="Consolas,monospace" fill="#f5e18b">reg.exe add $RegKey /v $RegName</text><text x="26" y="266" font-size="21" font-family="Consolas,monospace" fill="#666974">04</text><text x="80" y="266" font-size="21" font-family="Consolas,monospace" fill="#9de8c4">Start-Process $File2OutputPath</text><text x="26" y="318" font-size="21" font-family="Consolas,monospace" fill="#666974">05</text><text x="80" y="318" font-size="21" font-family="Consolas,monospace" fill="#92949e"># Process injection: notepad.exe</text>
+</g>
+<rect x="757" y="458" width="385" height="312" rx="17" fill="#f45661" opacity=".12" filter="url(#sh)"/>
+<g transform="translate(756 475) rotate(-7 185 132)">
+<rect width="382" height="312" rx="18" fill="url(#paper)" stroke="#fff" stroke-opacity=".4"/>
+<rect x="26" y="34" width="330" height="35" rx="5" fill="#ccc2c7"/><text x="46" y="59" font-family="Arial,sans-serif" font-size="24" font-weight="bold" fill="#313138">INVOICE / CHALLAN</text>
+<rect x="34" y="112" width="308" height="65" rx="10" fill="#e45f69" opacity=".26"/><text x="58" y="151" font-family="Arial,sans-serif" font-size="27" font-weight="bold" fill="#8a2734">Refund Notification</text>
+<text x="38" y="218" font-family="Consolas,monospace" font-size="22" fill="#45424a">Attachment: Invoice.zip</text>
+<path d="M36 258H342" stroke="#ada0a6" stroke-width="4"/><path d="M36 281H240" stroke="#ada0a6" stroke-width="4"/>
+</g>
+<rect x="1115" y="405" width="421" height="394" rx="26" fill="url(#pane)" stroke="#63636c" stroke-width="3"/>
+<text x="1149" y="448" font-family="Consolas,monospace" font-size="21" fill="#aeb2bb">ATTACK CHAIN</text>
+<rect x="1145" y="472" width="361" height="48" rx="10" fill="#222329" stroke="#43434d" stroke-width="1"/><text x="1166" y="504" font-family="Arial,sans-serif" font-size="21" font-weight="500" fill="#e7e7ea">Phishing email</text><rect x="1145" y="534" width="361" height="48" rx="10" fill="#222329" stroke="#43434d" stroke-width="1"/><text x="1166" y="566" font-family="Arial,sans-serif" font-size="21" font-weight="500" fill="#e7e7ea">Obfuscated PowerShell</text><rect x="1145" y="596" width="361" height="48" rx="10" fill="#222329" stroke="#43434d" stroke-width="1"/><text x="1166" y="628" font-family="Arial,sans-serif" font-size="21" font-weight="500" fill="#e7e7ea">Payload extraction</text><rect x="1145" y="658" width="361" height="48" rx="10" fill="#222329" stroke="#43434d" stroke-width="1"/><text x="1166" y="690" font-family="Arial,sans-serif" font-size="21" font-weight="500" fill="#e7e7ea">Run-key persistence</text><rect x="1145" y="720" width="361" height="48" rx="10" fill="#351a20" stroke="#fa4a56" stroke-width="2"/><text x="1166" y="752" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#ff686f">Process injection attempt</text>
 </svg>
